@@ -7,6 +7,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px solid red; */
+    
+
 }
 
 :root {
@@ -15,22 +18,29 @@
     --color-white: #fff;
     --background-dark: #27292b;
     --cards-color: #2f3133;
+    --color-none: opasity;
     --light-text-color: rgb(255, 255, 238);
     --color-text-gray-light: rgba(159, 159, 159);
     --text-color-gr: rgba(91, 91, 91);
     --text-color-gray-text:rgb(130,130,130);
+    --color-btn_gray: #2e3032;
+    --color-wh-gr: rgb(255, 244, 244);
+    --white--color: #f2f0ec;
+    --text-color--bl:rgba(255, 255, 255, 0.01);
     --text-title: 'Bebas Neue';
     --text-content: 'Roboto', sans-serif;
     --text-gold: 'Satisfy';
+    --color-black: #18191a;
+    
 }
 
-/* img {
+img {
     display: block;
     width: 100%;
     
   
     
-} */
+}
 .little__title {
     color: var(--text-color);
     font-family: var(--text-gold);
@@ -42,11 +52,12 @@
     font-family: var(--text-title);
     font-size: 58px;
     font-weight: 300;
-    margin: 0;
+    margin: 10px 0 10px 0;
 }
 
 .shot__line {
     display: block;
     border-bottom: 3px solid var(--text-color);
     width: 35px;
+    margin: 20px 0 20px 0;
 }

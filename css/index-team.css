@@ -1,8 +1,7 @@
 .team {
     padding-top: 90px;
     padding-bottom: 90px;
-    /* padding-left: 30px;
-    padding-right: 30px; */
+
 }
 
 .team__column {
@@ -18,35 +17,30 @@
 .fonts_logo_team {
     font-family: var(--text-gold);
     color: var(--text-color);
-    font-size: 24px;
+    font-size: 26px;
+    line-height: 1;
+    letter-spacing: 0;
 }
 
 .h2_team {
     font-family: var(--text-title);
     font-weight: 400;
-    /* text-transform: none;
+    text-transform: none;
     text-decoration: none;
-    font-style: normal; */
+    font-style: normal;
     letter-spacing: .02em;
     font-size: 38px;
     color: var(--color-gray);
-    /* margin-top: 20px; */
     line-height: 1.1;
 }
 
-.hr_logo_team {
-    height: 3px;
-    width: 55px;
-    background-color: var(--text-color);
-
-}
 
 .p_font_team {
     font-size: 19px;
     line-height: 1.5;
     font-family: var(--text-content);
     font-weight: 500;
-    color: var(--color-gray);
+    color: var(--text-color-gr);
 }
 
 .card_team {
@@ -60,14 +54,27 @@
 }
 
 .img_team {
-    width: 350px;
-    height: 235;
     width: 100%;
+    object-fit: cover;
+    object-position: 5.828% 72.806%;
+
+}
+
+#img_team_anna {
+    object-fit: cover;
+    object-position: 50.641% 43.445%;
 
 }
 
 .team__info {
     padding: 39px 43px 39px 43px;
+}
+
+.font__info_team {
+    font-size: 14px;
+    line-height: 1.67;
+    letter-spacing: 0;
+    color: var(--text-color-gr);
 }
 
 .h2_team_name {
@@ -78,13 +85,6 @@
     color: var(--text-color);
     letter-spacing: .02em;
     margin-top: 20px;
-
-}
-
-.hr_team {
-    height: 1px;
-    width: 276px;
-
 }
 
 .team_fonts_p {
@@ -93,10 +93,11 @@
     font-family: var(--text-content);
     font-weight: 400;
     color: var(--text-color-gray-text);
+
 }
 
 .team__icons {
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .team__icon_font {
@@ -104,6 +105,16 @@
     font-size: 30px;
     margin-left: 7.5px;
     margin-right: 7.5px;
+
+}
+
+.team__icon_font[type="submit"]:hover {
+    text-decoration: none;
+    color: var(--color-white);
+    background: var(--text-color);
+
+
+
 }
 
 @media (min-width:768px) {
@@ -111,23 +122,44 @@
         padding: 46px 52px 46px 52px;
     }
 
+    .font__info_team {
+        font-size: 15px;
+        line-height: 1.67;
+        letter-spacing: 0;
+    }
+
+    .h2_team_name {
+        font-size: 34px;
+        line-height: 1.2;
+        font-family: var(--text-title);
+        font-weight: 400;
+        color: var(--text-color);
+        letter-spacing: .02em;
+        margin-top: 20px;
+    }
+
+    .hr_team {
+        min-height: 1px;
+        width: 100%;
+    }
+
     .img_team {
         width: 50%;
-        width: 356px;
-        height: 442px;
     }
 
     .card_team {
         display: flex;
         flex-direction: row;
-        /* align-items: left; */
-        /* justify-content: left; */
+        justify-content: left;
         text-align: left;
     }
+
     #card_team_anna {
         display: flex;
         flex-direction: row-reverse;
-}
+    }
+
+
 }
 
 
@@ -135,19 +167,8 @@
     .team__info {
         padding: 46px 52px 46px 52px;
     }
-
-    .img_team {
-        width: 50%;
-        width: 393px;
-        height: 417px;
-    }
-
-    .card_team {
-        display: flex;
-        flex-direction: row;
-        text-align: left;
-    }
 }
+
 @media (min-width: 900px) {
     .team {
         padding-left: 30px;
@@ -160,64 +181,11 @@
         text-decoration: none;
         font-style: normal;
     }
-
-    .img_team {
-        width: 418px;
-        height: 418px;
-        /* width: 100%; */
-
-    }
-    .team__info {
-        padding: 34px 28px 34px 28px;
-
-
-    }
-    .card_team {
-        display: flex;
-        flex-direction: row;
-        text-align: left;
-        
-        }
-
-    #card_team_anna {
-        display: flex;
-        flex-direction: row-reverse;
-    }
 }
 
 @media (min-width:1085px) {
-    .team {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .h2_team {
-        font-size: 58px;
-        text-transform: none;
-        text-decoration: none;
-        font-style: normal;
-    }
-
-    .img_team {
-        width: 575px;
-        height: 399px;
-        /* width: 100%; */
-
-    }
     .team__info {
-        padding: 34px 28px 34px 28px;
-
-
+        padding: 60px 70px 60px 70px;
     }
-    .card_team {
-        display: flex;
-        flex-direction: row;
-        text-align: left;
-        
-        }
 
-    #card_team_anna {
-        display: flex;
-        flex-direction: row-reverse;
-    }
 }

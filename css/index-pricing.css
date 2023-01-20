@@ -1,6 +1,6 @@
 .our__pricing__plans {
     margin: 0 217.5px 0 217/5px;
-    padding: 0 190px 0 190px;
+    padding: 0;
     border: 40px 0 40px 0;
 }
 
@@ -14,32 +14,45 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     height: auto;
-    margin: 50px 0 90px 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
     color: var(--light-text-color);
-        
+
 }
 
 .about__course {
     background-color: var(--cards-color);
     margin: 15px;
     padding: 35px 30px 35px 30px;
+    font-family: 'roboto', sans-serif;
+    font-size: 17px;
+    font-stretch: 100%;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    position: relative;
+
 }
 
 .about__pricing {
     font-size: 19px;
-    font-family: 'roboto',serif;
+    font-family: 'roboto', serif;
     color: var(--light-text-color);
+    word-wrap: break-word;
 }
 
 .our__pricing__plans__block {
     display: grid;
-    justify-items: center; 
+    justify-items: center;
     align-items: center;
 
 }
 
 .our__pricing__plans {
     background-color: var(--background-dark);
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .frame__under__pricing {
@@ -53,49 +66,66 @@
     font-size: 24px;
 }
 
-.pricing, .about__course__price {
+.pricing,
+.about__course__price {
     color: var(--text-color);
+
 }
 
 .about__course__price {
-    padding: 20px 30px 55px 30px;
+    padding-bottom: 0;
     text-align: left;
     font-family: 'roboto', serif;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .list__about__course {
     list-style: none;
     height: 360;
-    padding: 35px 30px 35px 30px;
+    padding: 15px 30px 35px 30px;
     font-family: 'roboto', serif;
     font-size: 17px;
     font-weight: 400;
 }
 
 .button__pricing {
-   color: var(--light-text-color);
-   background-color: var(--text-color);
-   height: 15x;
+    color: var(--light-text-color);
+    background-color: var(--text-color);
+    height: 15x;
     width: auto;
     border: none;
     padding: 15px 26px 15px 26px;
+    position: absolute;
+    bottom: 15px;
 
 }
 
 .img-above-pricing {
-    background-color: var(--background-dark);
+    /*background-color: var(--background-dark);*/
+    /*color: var(--background-dark);*/
+    fill: var(--background-dark);
+}
+
+.img-under-pricing {
+    background-color: var(--light-text-color);
 }
 
 .img__checked__menu {
     display: inline;
+    width: 30px;
 }
 
 .about__course__header {
-    padding-bottom: 35px;
+    padding-bottom: 60px;
     padding-top: 30px;
     text-align: center;
     height: 75px;
     font-family: 'roboto', serif;
+}
+
+.cards__list:not(:first-child) {
+    padding-top: 15px;
 }
 
 .under__header-hr {
@@ -106,20 +136,23 @@
     margin-bottom: 15px;
 }
 
-.img__logo {
-    width: 150px;
-}
-
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1080px) {
     .about__course__container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         width: max-content;
-        margin: 20px 0 20px 0; 
+        margin: 20px 0 20px 0;
     }
+
     .our__pricing__plans {
-        padding: 0 30px 0 30px;
+        padding: 0;
     }
+
+    .list__about__course {
+        font-size: 15px;
+    }
+
+
 }
 
 @media screen and (max-width: 768px) {
@@ -127,11 +160,12 @@
         display: grid;
         grid-template-columns: 1fr;
         width: max-content;
-        margin: auto; 
+        margin: auto;
         align-items: center;
     }
+
     .our__pricing__plans {
-        padding: 0 30px 0 30px;
+        padding: 0;
     }
 
     .about__pricing {

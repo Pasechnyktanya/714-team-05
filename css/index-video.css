@@ -1,20 +1,26 @@
 .video {
-    background: linear-gradient(rgba(39,41,43, 0.7),rgba(39,41,43, 10)), url(/img/photo_video.png);
+    background: linear-gradient(rgba(39, 41, 43, 0.8), rgba(39, 41, 43, 10)), url(../img/photo_video.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    min-height: 500px;
-    font-weight: 464;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--text-color);
     text-align: center;
+    object-fit: cover;
+    object-position: 58.13% 32.34%;
 }
 
 .video_make-coffee {
     padding-top: 130px;
     padding-bottom: 130px;
+
+}
+
+.clock-video {
+    padding-top: 50px;
+    font-size: 40px;
 
 }
 
@@ -24,38 +30,32 @@
         padding-bottom: 280px;
     }
 }
+
 #video__text {
     color: var(--color-white);
     font-size: 38px;
     line-height: 1.1;
     font-family: var(--text-title);
     font-weight: 400;
-    /* text-transform: none;
-    text-decoration: none;
-    font-style: normal; */
     letter-spacing: .02em;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    min-width: 320px;
     display: flex;
-    flex-direction: column;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 @media (min-width:700px) {
     #video__text {
-    color: var(--color-white);
-    font-size: 58px;
-    line-height: 1.1;
-    font-family: var(--text-title);
-    font-weight: 400;
-    text-transform: none;
-    text-decoration: none;
-    font-style: normal;
-    letter-spacing: .02em;
-    text-align: center;
+        color: var(--color-white);
+        line-height: 1.1;
+        font-family: var(--text-title);
+        text-transform: none;
+        text-decoration: none;
+        font-style: normal;
+        letter-spacing: .02em;
+        text-align: center;
     }
 }
 
@@ -65,7 +65,8 @@
     text-align: center;
 }
 
-
-
-
-
+@media (min-width: 880px) {
+    #video__text {
+        font-size: 58px;
+    }
+}
